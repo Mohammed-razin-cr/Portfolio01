@@ -98,23 +98,23 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
           <div
             className={`relative h-96 transition-all duration-1000 delay-500 ${showContent ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl animate-pulse-glow" />
-            <div className="relative h-full border border-primary/20 rounded-2xl backdrop-blur-sm bg-background/30 flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl blur-3xl animate-pulse-glow" />
+            <div className="relative h-full border border-blue-500/20 rounded-2xl backdrop-blur-sm bg-background/30 flex items-center justify-center overflow-hidden">
               {/* Animated gradient circle */}
-              <div className="absolute w-64 h-64 bg-gradient-to-r from-primary to-accent rounded-full blur-3xl opacity-30 animate-float" />
+              <div className="absolute w-64 h-64 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-30 animate-float" />
 
               {/* Code visualization */}
               <div className="relative z-10 font-mono text-sm space-y-3 text-center px-6">
-                <div className="text-primary animate-code-glow" style={{ animationDelay: '0s' }}>
+                <div className="text-gray-400 animate-code-glow" style={{ animationDelay: '0s' }}>
                   {"<"}/Developer{">"}
                 </div>
-                <div className="text-accent animate-code-glow" style={{ animationDelay: '0.3s' }}>
+                <div className="text-slate-300 animate-code-glow" style={{ animationDelay: '0.3s' }}>
                   skills: [MERN, ...]
                 </div>
                 <div className="text-foreground/60 animate-code-glow" style={{ animationDelay: '0.6s' }}>
                   passion: building
                 </div>
-                <div className="text-primary animate-code-glow" style={{ animationDelay: '0.9s' }}>
+                <div className="text-gray-400 animate-code-glow" style={{ animationDelay: '0.9s' }}>
                   {"<"}/Developer{">"}
                 </div>
               </div>

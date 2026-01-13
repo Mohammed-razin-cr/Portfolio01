@@ -10,6 +10,7 @@ import GitHubSection from "@/components/github-section"
 import SocialLinks from "@/components/social-links"
 import ParticleBackground from "@/components/particle-background"
 import PageLoader from "@/components/page-loader"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -57,6 +58,7 @@ export default function Home() {
             </a>
           </div>
           <div className="flex gap-2 items-center">
+            <ThemeToggle />
             <button
               onClick={downloadResume}
               className="px-4 py-2 bg-gradient-to-r from-gray-400 to-slate-300 text-black rounded-lg text-sm font-bold hover:shadow-lg hover:shadow-gray-500/30 transition-all duration-300 hover:scale-105"
